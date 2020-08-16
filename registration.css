@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  background: url("./img/reg-bg.png") no-repeat center;
+  background-size: cover;
+}
+
+input.error {
+  margin-bottom: 0 !important;
+  border: 1px solid red !important;
+}
+
+label.error {
+  font-size: 12px;
+  color: red;
+}
+
+.reg-header {
+  padding-top: 33px;
+  padding-bottom: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.reg-header__back {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.reg-header__back span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #e53b2a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.reg-header__back img {
+  margin-right: 10px;
+}
+
+.reg-header__back:hover {
+  color: #bd1302;
+}
+
+.reg-header__email {
+  font-size: 18px;
+  line-height: 22px;
+  color: #e53b2a;
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.reg-header__email:hover {
+  color: #bd1302;
+}
+
+.register__title {
+  font-size: 46px;
+  line-height: 56px;
+  margin-bottom: 55px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.register__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.register__form input {
+  height: 54px;
+  border: 1px solid #000000;
+  margin-bottom: 20px;
+  padding: 17px 20px;
+}
+
+.register__form input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+.register__form input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+.register__form input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+.register__form input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+
+.register__form input[type="textarea"] {
+  height: 157px;
+  padding-bottom: 120px;
+}
+
+.register__form input[type="submit"] {
+  height: 72px;
+  background: #e53b2a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #fff;
+  font-weight: 700;
+  border: transparent;
+  transition: 0.3s;
+}
+
+.register__form input[type="submit"]:hover {
+  background: #bd1302;
+}
+
+@media (max-width: 767.98px) {
+  .reg-header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+  }
+  .reg-header__back {
+    position: absolute;
+    top: 33px;
+    left: 0;
+  }
+  .reg-header__back span {
+    display: none;
+  }
+  .reg-header__email {
+    text-align: center;
+  }
+  .register__title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 38px;
+  }
+  .register__form {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=registration.css.map */
